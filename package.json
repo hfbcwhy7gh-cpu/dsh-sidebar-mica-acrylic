@@ -1,0 +1,51 @@
+{
+  "name": "dsh-sidebar-mica-acrylic",
+  "version": "1.0.0",
+  "description": "Windows 11 云母 (Mica) 与亚克力 (Acrylic) 侧栏材质效果插件，支持在 DSH 设置页内实时自定义配置。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "mica",
+    "acrylic",
+    "fluent-design",
+    "windows11"
+  ],
+  "author": "hfbcwhy7gh-cpu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hfbcwhy7gh-cpu/dsh-sidebar-mica-acrylic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hfbcwhy7gh-cpu/dsh-sidebar-mica-acrylic/issues"
+  },
+  "homepage": "https://github.com/hfbcwhy7gh-cpu/dsh-sidebar-mica-acrylic#readme",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
